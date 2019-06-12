@@ -12,8 +12,7 @@ android:
         - extra-google-m2repository
         - extra-android-m2repository
         - addon-google_apis-google-27
-        - sys-img-armeabi-v7a-android-27
-  
+        - sys-img-armeabi-v7a-addon-google_apis-google-27
 
 
 before_install:
