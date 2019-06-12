@@ -22,7 +22,7 @@ public class Build {
 		 File app = new File(appDir, "app-QALive-debug.apk");
 		 DesiredCapabilities capabilities = new DesiredCapabilities();
 		 capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
-		 capabilities.setCapability("deviceName", "emulator");
+		 capabilities.setCapability("deviceName", "test");
 		 capabilities.setCapability("platformVersion", "9");
 		 capabilities.setCapability("platformName", "Android");
 		 capabilities.setCapability("appPackage", "com.freewire");
