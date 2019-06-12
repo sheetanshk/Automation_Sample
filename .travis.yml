@@ -25,7 +25,7 @@ before_install:
 before_script:
 
     # Create emulator (emulator image version should be exist in previous android setting)
-    - echo no | android create avd --force --name test --target android-27 --armeabi-v7a
+    - echo no | android create avd --force --name test --target android-27 --google_apis/armeabi-v7a
     # Run emulator
     #- echo no | android create avd --force --device "Nexus 5" --name test --target android-22 --abi armeabi-v7a --skin WVGA800 --sdcard 512M
     - emulator -avd test -no-skin -no-window &
