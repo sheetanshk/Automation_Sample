@@ -6,13 +6,13 @@ android:
     components:
         - tools
         - platform-tools
-        - build-tools-29.0.0
-        - android-29
+        - build-tools-26.0.2
+        - android-26
         - extra-google-google_play_services
         - extra-google-m2repository
         - extra-android-m2repository
-        - addon-google_apis-google-29
-        - sys-img-armeabi-v7a-android-29
+        - addon-google_apis-google-26
+        - sys-img-armeabi-v7a-android-26
   
 
 
@@ -22,11 +22,11 @@ before_install:
 - node --version
 - npm --version
 - npm install -g appium
-- yes | sdkmanager "platforms;android-29"
+- yes | sdkmanager "platforms;android-26"
 before_script:
 
     # Create emulator (emulator image version should be exist in previous android setting)
-    - echo no | android create avd --force --name test --target android-29
+    - echo no | android create avd --force --name test --target android-26 --abi armeabi-v7a
     # Run emulator
     #- echo no | android create avd --force --device "Nexus 5" --name test --target android-22 --abi armeabi-v7a --skin WVGA800 --sdcard 512M
     - emulator -avd test -no-skin -no-window &
